@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="resources.css">
+</head>
+
+<body>
+
+	<!--Responsive navbar-->
+	<nav>
+		<div class="nav-wrapper blue">
+			<a href="#" class="brand-logo">learningCurated</a>
+			<a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li class="active"><a href="#">Home</a></li>
+				<li>
+					<a href="#"></a>
+				</li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<!--Card Bio Rows-->
+		<div class="row">
+
+			<!--First Card-->
+			<div class="col m4">
+				<div class="card z-depth-3 blue-grey darken-1">
+					<div class="card-image">
+						<img class="responsive-img" src="assets/headshot-tim.jpeg" alt="Timothy Castillo">
+					</div>
+					<div class="card-content white-text">
+						<p>Hello there! My name is Timothy Castillo and I am a Junior Computer Science Major at the University of San Francisco. Graduating December 2016</p>
+					</div>
+					<div class="card-action">
+						<a href="https://github.com/tacastillo">Click here for my Github</a>
+					</div>
+				</div>
+			</div>
+			<!--Blurb Header-->
+			<div class="col m8">
+				<div class="card-panel teal valign-wrapper">
+					<span class="valign right-align white-text">
+						<h4 class="spaced flow-text">
+							I am actually a horribly boring person... so here is my resume. If you know of any recruiters in the SF Bay Area that are hiring for software internships, send them this way, please! <i class="material-icons">thumb_up</i>
+						</h4>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Hills Parallax-->
+	<div class="parallax-container">
+		<div class="parallax"><img src="assets/hills.jpg"></div>
+	</div>
+
+	<!--Info-->
+	<div class="container">
+		<!--School and Hometown-->
+		<div class="row">
+			<div class="col m6">
+				<div class="card medium">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="assets/lomo.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">University of San Francisco<i class="material-icons right">more_vert</i></span>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Education<i class="material-icons right">close</i></span>
+						<p>At the University of San Francisco, I received a world class education in Computer Science with a minor in Entrepreneurship and Innovation. I benefited from small class sizes, ranging from 24 people to as few as 6 people in a classroom. Being located in San Francisco, I had the access and opportunities to brush shoulders with developers of major technical companies in San Francisco, one of the world's largest hubs for innovation.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col m6">
+				<div class="card medium">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="assets/san-jose.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">San Jose, CA<i class="material-icons right">more_vert</i></span>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Hometown<i class="material-icons right">close</i></span>
+						<p>Born in raised in San Jose, CA, I was exposed to many cultures and perspectives of the world. I was surrounded by people and peers who were driven and passionate about changing the world and making a positive impact to the communities around them.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Collapsible Resume-->
+	<ul class="collapsible popout" data-collapsible="accordion">
+		<li>
+			<div class="collapsible-header"><i class="material-icons">high_quality</i>Skills and Experiences</div>
+			<div class="collapsible-body center-align">
+				<img src="assets/java-logo.png" class="language" alt="java programming language">
+				<img src="assets/c-logo.png" class="language" alt="c progrmaming language low-level kernel">
+				<img src="assets/frontend-logos.png" class="language" alt="front end html, css and javascript">
+			</div>
+		</li>
+		<li>
+			<div class=" collapsible-header "><i class="material-icons ">code</i>Projects</div>
+			<div class="collapsible-body ">
+
+				<p>
+					<strong>Huffman Lossless Compression File Encoder</strong> - Command line utility in Java that used Huffman compression algorithm, which applies a binary search tree to map out how often bytes appeared and rewrote the file using the map created
+					<br>
+					<br>
+					<strong>Web Search Engine in Java</strong> - Created the front and back end of an Internet search engine that recursively searched through websites, scraped more links, stored word locations in an advanced data structure called an Inverted Index, then used a ranking algorithm (TFIDF) to rank and compute relevant pages in a search results page. Used MySQL databases to store user sessions and search history.
+					<br>
+					<br>
+					<strong>Multithreaded Swing Java MP3 Music Player</strong> - GUI-based MP3 Player that loads/plays an .xml file of a song playlist with multithreading
+				</p>
+
+			</div>
+		</li>
+		<li>
+			<div class="collapsible-header "><i class="material-icons ">grade</i>Relevant Coursework</div>
+			<div class="collapsible-body ">
+				<p>
+					<strong>Data Structures and Algorithms (Spring 2015)</strong> - Implemented dynamic programming, 12 search algorithms, hashes, graph traversals and various types of trees, heaps, queues, stacks and sparse arrays
+					<br>
+					<br>
+					<strong>Software Development (Spring 2015)</strong> - Implemented concurrency, web development, runtime management and data structures
+					<br>
+					<br>
+					<strong>Parallel Computing (Fall 2014)</strong> - Applied concepts of MIMD and SIMD parallel computing in C through implementations in MPI and PThread
+				</p>
+			</div>
+		</li>
+		<li>
+			<div class="collapsible-header "><i class="material-icons ">settings_input_hdmi</i>Work Experience</div>
+			<div class="collapsible-body ">
+				<p>
+					<strong>Teaching Assistant- Computer Science (August 2014-Present)</strong> - Assisted students during lecture and lab. Held office hours for tutoring and lecturing in all Computer Science classes. Graded homework and gave input on how to improve the class. Worked with a team of five other TAs to coordinate grading, office hours and project planning
+					<br>
+					<br>
+					<strong>Tutor - USF Computer Science Tutoring Center (August 2015-Present)</strong> - Tutored, debugged, and educated Computer Science students. Required ability to jump into existing code, understand the programmer’s mindset, and then efficiently communicate how to improve the program in a non-invasive manner. Coordinated and organized tech talks, programming events, hackathons and other events to foster the growth of the USF Computer Science community.
+
+				</p>
+			</div>
+		</li>
+	</ul>
+
+	<!--Campfire Parallax-->
+	<div class="parallax-container">
+		<div class="parallax "><img src="assets/campfire.jpg "></div>
+	</div>
+
+
+
+	<!--Floating Action Button-->
+	<div class="fixed-action-btn " style="bottom: 30px; right: 24px; ">
+		<a class="btn-floating btn-large red ">
+			<i class="large material-icons ">mode_edit</i>
+		</a>
+		<ul>
+			<li><a class="btn-floating red "><i class="material-icons ">settings</i></i></a></li>
+			<li><a class="btn-floating yellow darken-1 "><i class="material-icons ">comment</i></a></li>
+			<li><a class="btn-floating green "><i class="material-icons ">trending_up</i></a></li>
+			<li><a class="btn-floating blue "><i class="material-icons ">attach_file</i></a></li>
+		</ul>
+	</div>
+
+	<!--Footer-->
+	<footer class="page-footer blue">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h5 class="white-text">learningCurated</h5>
+					<p class="grey-text text-lighten-4">Please feel free to contact me at <a href="tacastillo@dons.usfca.edu">tacastillo@dons.usfca.edu</a> for any inquiries or prospects</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2015 learningCurated, inc.
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
